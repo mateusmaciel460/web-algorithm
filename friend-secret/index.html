@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Algorithm | Friend Secret</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/LXjRbHTH/005.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://wondrous-clafoutis-e58573.netlify.app/project-base/style.css">
+    <style>
+        .container__box p {
+            font-size: 1.3rem;
+        }
+    </style>
+</head>
+<body>
+    <main class="container container__center container__horizontal">
+        <section class="container__section container__vertical">
+            <h1 class="container__title">Amigo Secreto</h1>
+
+            <div class="container__group container__vertical">
+                <div class="container__layer">
+                    <input type="text" name="friend" id="friend" placeholder="Nome do amigo" class="container__input"/>
+                </div>
+            </div>
+
+            <div class="container__buttons container__horizontal">
+                <button onclick="addFriend()" id="button-add-friend" class="container__button container__button--blue">Adicionar</button>
+                <button onclick="drawnFriends()" id="button-drawn-friend" class="container__button container__button--orange" disabled>Sortear</button>
+                <button onclick="restart()" id="button-restart" class="container__button container__button--gray" disabled>Reiniciar</button>
+            </div>
+
+            <div class="container__mensage" id="mensage-error"></div>
+        </section>
+
+        <section class="container__section container__vertical">
+            <div class="container__box container__vertical">
+                <h2 class="container__subtitle">Amigos adicionados</h2>
+                <p class="container__text" id="show-friends">Nenhum amigo adicionado</p>
+            </div>
+
+            <div class="container__box container__vertical">
+                <h2 class="container__subtitle">Amigos sorteados</h2>
+                <p class="container__text" id="show-friends-drawn">Nenhum sorteio realizado</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
