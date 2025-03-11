@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Algorithm | Drawn Numbers</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/sDFtMW7/002.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://wondrous-clafoutis-e58573.netlify.app/project-base/style.css">
+</head>
+<body>
+    <main class="container container__center container__horizontal">
+        <section class="container__section container__vertical">
+            <h1 class="container__title">Sorteador de números</h1>
+
+            <div class="container__group container__vertical">
+                <div class="container__layer">
+                    <input type="number" id="min" name="min" placeholder="Número inicial" class="container__input"/>
+                </div>
+                <div class="container__layer">
+                    <input type="number" id="max" name="max" placeholder="Número final" class="container__input"/>
+                </div>
+                <div class="container__layer">
+                    <input type="number" id="amount" name="amount" placeholder="Quantidade" class="container__input"/>
+                </div>
+            </div>
+
+            <div class="container__buttons container__horizontal container__center">
+                <button onclick="drawn()" id="button-drawn" class="container__button container__button--blue">Sortear</button>
+                <button onclick="restart()" id="button-restart" class="container__button container__button--gray" disabled>Reiniciar</button>
+            </div>
+
+            <div class="container__vertical container__mensage">
+                <span class="container__span--result" id="mensage-result">Números sorteados: nenhum</span>
+                <span id="mensage-error"></span>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
