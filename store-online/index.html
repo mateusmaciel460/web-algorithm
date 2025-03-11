@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Algorithm | Store Online</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/XrZG07CZ/004.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://wondrous-clafoutis-e58573.netlify.app/project-base/style.css">
+    <style>
+        .container__center {
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <main class="container container__center container__horizontal">
+        <section class="container__vertical">
+            <h1 class="container__title">Carrinho de compras</h1>
+
+            <div class="container__group container__vertical">
+                <div class="container__layer">
+                    <input type="number" id="amount" name="amount" placeholder="Quantidade" class="container__input"/>
+                </div>
+                <div class="container__layer">
+                    <select id="product" name="product" class="container__input">
+                        <option value="Carregador - R$ 150">Carregador - R$ 150</option>
+                        <option value="Notebook - R$ 4500">Notebook - R$ 4500</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="container__buttons container__horizontal">
+                <button onclick="addProduct()" id="button-add-product" class="container__button container__button--blue">Adicionar</button>
+                <button onclick="restart()" id="button-restart" class="container__button container__button--gray" disabled>Reiniciar</button>
+            </div>
+
+            <div class="container__mensage" id="mensage-error"></div>
+        </section>
+
+        <section class="container__vertical">
+            <h2 class="container__subtitle">Produtos no carrinho</h2>
+            <ul class="container__menu container__vertical" id="list-products"></ul>
+
+            <h2 class="container__subtitle"0>
+                Total: <span class="container__emphasis" id="result-price-general">R$ 0</span>
+            </h2>
+        </section>
+    </main>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
