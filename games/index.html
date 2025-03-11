@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Algoritm | Games</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/5Xh7jJcc/003.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://wondrous-clafoutis-e58573.netlify.app/project-base/style.css">
+    <style>
+        .games {
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <main class="container container__center container__horizontal">
+        <section class="games container__section container__vertical">
+            <h1 class="container__title">Games.com</h1>
+            <p class="container__text" id="mensage-counter">Total de filmes alugados: 0</p>   
+
+            <div class="games container__group container__horizontal">
+                <div class="container__layer container__vertical" id="game-1">
+                    <img src="https://i.ibb.co/5Xh7jJcc/003.png" alt="Imagem - teste" class="container__image"/>
+                    <h2 class="container__subtitulo">Game 01</h2>
+                    <button onclick="rent(1)" id="button-rent" class="container__button container__button--blue">Alugar</button>
+                </div>
+                <div class="container__layer container__vertical" id="game-2">
+                    <img src="https://i.ibb.co/5Xh7jJcc/003.png" alt="Imagem - teste" class="container__image"/>
+                    <h2 class="container__subtitulo">Game 02</h2>
+                    <button onclick="rent(2)" id="button-rent" class="container__button container__button--blue">Alugar</button>
+                </div>
+                <div class="container__layer container__vertical" id="game-3">
+                    <img src="https://i.ibb.co/5Xh7jJcc/003.png" alt="Imagem - teste" class="container__image"/>
+                    <h2 class="container__subtitulo">Game 03</h2>
+                    <button onclick="rent(3)" id="button-rent" class="container__button container__button--blue">Alugar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
