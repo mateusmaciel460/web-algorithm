@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Algorithm | Number Secret</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/HT1FLRk6/001.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://wondrous-clafoutis-e58573.netlify.app/project-base/style.css">
+</head>
+<body>
+    <main class="container container__center container__horizontal">
+        <section class="container__section container__vertical">
+            <h1 class="container__title">Jogo do Número Secreto</h1>
+            <p class="container__text">Digite um número entre 1 e 10</p>
+
+            <div class="container__group container__vertical">
+                <div class="container__layer">
+                    <input type="number" id="kick" name="kick" placeholder="Digite um número inteiro" class="container__input"/>
+                </div>
+            </div>
+
+            <div class="container__buttons container__center container__horizontal">
+                <button onclick="kick()" id="button-kick" class="container__button container__button--blue">Chutar</button>
+                <button onclick="restart()" id="button-restart" class="container__button container__button--gray" disabled>Reiniciar</button>
+            </div>
+
+            <div class="container__mensage" id="mensage-error"></div>
+        </section>
+    </main>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
